@@ -1,0 +1,42 @@
+{
+    "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+    "extends": ["github>UI5/renovate-config:datasources"],
+    "customManagers": [
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "ui5\\.ya?ml",
+                ".*-ui5\\.ya?ml",
+                ".*\\.ui5\\.ya?ml",
+                "ui5-deploy\\.ya?ml",
+                "ui5-dist\\.ya?ml",
+                "ui5-local\\.ya?ml",
+                ".*\\.html"
+            ],
+            "matchStrings": [
+                "https:\\/\\/sdk\\.openui5\\.org\\/(?<currentValue>[\\.0-9]+)",
+                "[\\w\\s\\:\\'\\\"-./@]+OpenUI5[\\w\\s\\:\\'\\\"-./@]+version: \"?(?<currentValue>[\\.0-9]+)\"?"
+            ],
+            "depNameTemplate": "openui5",
+            "datasourceTemplate": "custom.openui5"
+        },
+        {
+            "customType": "regex",
+            "fileMatch": [
+                "ui5\\.ya?ml",
+                ".*-ui5\\.ya?ml",
+                ".*\\.ui5\\.ya?ml",
+                "ui5-deploy\\.ya?ml",
+                "ui5-dist\\.ya?ml",
+                "ui5-local\\.ya?ml",
+                ".*\\.html"
+            ],
+            "matchStrings": [
+                "https:\\/\\/ui5\\.sap\\.com\\/(?<currentValue>[\\.0-9]+)",
+                "[\\w\\s\\:\\'\\\"-./@]+SAPUI5[\\w\\s\\:\\'\\\"-./@]+version: \"?(?<currentValue>[\\.0-9]+)\"?"
+            ],
+            "depNameTemplate": "sapui5",
+            "datasourceTemplate": "custom.sapui5"
+        }
+    ]
+}

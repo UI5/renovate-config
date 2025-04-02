@@ -1,0 +1,44 @@
+{
+  "name": "@ui5/renovate-config",
+  "version": "0.0.1",
+  "private": "true",
+  "description": "A Renovate preset to keep your UI5 application up-to-date",
+  "author": {
+    "name": "SAP SE",
+    "email": "openui5@sap.com",
+    "url": "https://www.sap.com"
+  },
+  "license": "Apache-2.0",
+  "keywords": [
+    "openui5",
+    "sapui5",
+    "ui5",
+    "development",
+    "linter"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UI5/renovate-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/UI5/renovate-config/issues"
+  },
+  "scripts": {
+    "check-licenses": "licensee --errors-only",
+    "depcheck": "depcheck --ignores @commitlint/config-conventional",
+    "hooks:pre-push": "npm run lint:commit",
+    "lint:commit": "commitlint -e",
+    "prepare": "node ./.husky/skip.js || husky",
+    "prettier": "prettier default.json lts.json datasources.json --write",
+    "prettier:check": "prettier default.json lts.json datasources.json --check",
+    "test": "npm run prettier:check && npm run depcheck && npm run check-licenses"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "depcheck": "^1.4.7",
+    "husky": "^9.1.7",
+    "licensee": "^11.1.1",
+    "prettier": "3.4.2"
+  }
+}

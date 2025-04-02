@@ -1,0 +1,14 @@
+{
+  "licenses": {
+    "spdx": [
+      "CC-BY-3.0",
+      "CC-BY-4.0",
+      "BSD"
+    ],
+    "blueOak": "bronze"
+  },
+  "packages": {
+    "callsite": "1.0.0"
+  },
+  "corrections": true
+}

@@ -1,40 +1,85 @@
-# SAP Repository Template
+![UI5 logo](./docs/images/UI5_logo_wide.png)
 
-Default templates for SAP open source repositories, including LICENSE, .reuse/dep5, Code of Conduct, etc... All repositories on github.com/SAP will be created based on this template.
+# UI5 Renovate Preset
 
-## To-Do
+> A Renovate preset to keep your UI5 application up-to-date.
 
-In case you are the maintainer of a new SAP open source project, these are the steps to do with the template files:
+[![OpenUI5 Community Slack (#tooling channel)](https://img.shields.io/badge/slack-join-44cc11.svg)](https://ui5-slack-invite.cfapps.eu10.hana.ondemand.com/)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg)](https://github.com/UI5/renovate-config?tab=coc-ov-file#readme)
+[![REUSE status](https://api.reuse.software/badge/github.com/UI5/renovate-config)](https://api.reuse.software/info/github.com/UI5/renovate-config)
 
-- Check if the default license (Apache 2.0) also applies to your project. A license change should only be required in exceptional cases. If this is the case, please change the [license file](LICENSE).
-- Enter the correct metadata for the REUSE tool. See our [wiki page](https://wiki.one.int.sap/wiki/display/ospodocs/Using+the+Reuse+Tool+of+FSFE+for+Copyright+and+License+Information) for details how to do it. You can find an initial .reuse/dep5 file to build on. Please replace the parts inside the single angle quotation marks < > by the specific information for your repository and be sure to run the REUSE tool to validate that the metadata is correct.
-- Adjust the contribution guidelines (e.g. add coding style guidelines, pull request checklists, different license if needed etc.)
-- Add information about your project to this README (name, description, requirements etc). Especially take care for the <your-project> placeholders - those ones need to be replaced with your project name. See the sections below the horizontal line and [our guidelines on our wiki page](https://wiki.one.int.sap/wiki/pages/viewpage.action?pageId=3564976048#GuidelinesforGitHubHealthfiles(Readme,Contributing,CodeofConduct)-Readme.md) what is required and recommended.
-- Remove all content in this README above and including the horizontal line ;)
+- [UI5 Renovate Preset](#ui5-renovate-config)
+	- [Features](#features)
+	- [Usage](#usage)
+	- [Sample](#sample)
+	- [Further Information](#further-information)
+	- [Support, Feedback, Contributing](#support-feedback-contributing)
+	- [Security / Disclosure](#security--disclosure)
+	- [Code of Conduct](#code-of-conduct)
+	- [Licensing](#licensing)
 
-***
+## Features
 
-# Our new open source project
+Automatically creates pull requests to your UI5 project whenever a new UI5 version is released.
 
-## About this project
+Information on the currently used UI5 version is updated in the following files:
+- ui5.yaml files
+- HTML files
 
-*Insert a short description of your project here...*
+The UI5 Renovate Preset takes into account whether your project uses [OpenUI5](https://sdk.openui5.org/) or [SAPUI5](https://ui5.sap.com/).
 
-## Requirements and Setup
+## Usage
 
-*Insert a short description what is required to get your project running...*
+1. Set up [Renovate](https://docs.renovatebot.com/getting-started/installing-onboarding/) for your repository.
+2. Create a new file called `renovate.json` at the root level of your project.
+3. Add the following content:
+
+```json
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"UI5/renovate-config"
+	],
+	"separateMinorPatch": true
+}
+```
+
+**Note:** We recommend setting `separateMinorPatch` to `true` to create separate pull requests for patches and minor releases.
+
+If your project should only consume Long-Term Support (LTS) releases, use the following content:
+
+```json
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"UI5/renovate-config:lts"
+	],
+	"separateMinorPatch": true
+}
+```
+
+## Sample
+
+See https://github.com/SAP/openui5-sample-app for a live demo of `UI5 Renovate Preset`.
+
+## Further Information
+
+- [Renovate Docs](https://docs.renovatebot.com/)
 
 ## Support, Feedback, Contributing
 
-This project is open to feature requests/suggestions, bug reports etc. via [GitHub issues](https://github.com/SAP/<your-project>/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
+This project is open to feature requests/suggestions, bug reports, etc. via [GitHub issues](https://github.com/UI5/renovate-config/issues). Contribution and feedback are encouraged and always welcome. For more information about how to contribute, the project's structure, as well as additional contribution information, see our [Contribution Guidelines](CONTRIBUTING.md).
+
+You can also chat with us in the [`#renovate-config`](https://openui5.slack.com/archives/C0A7QFN6B) channel of the [OpenUI5 Community Slack](https://ui5-slack-invite.cfapps.eu10.hana.ondemand.com/). For public Q&A, use the [`ui5-renovate-config` tag on Stack Overflow](https://stackoverflow.com/questions/tagged/ui5-tooling).
 
 ## Security / Disclosure
-If you find any bug that may be a security problem, please follow our instructions at [in our security policy](https://github.com/SAP/<your-project>/security/policy) on how to report it. Please do not create GitHub issues for security-related doubts or problems.
+
+If you find any bug that might be a security problem, please follow the instructions given in [Security Policy](https://github.com/UI5/renovate-config/security/policy) on how to report it. Please do not create GitHub issues for security-related concerns or problems.
 
 ## Code of Conduct
 
-We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/SAP/.github/blob/main/CODE_OF_CONDUCT.md) at all times.
+We as members, contributors, and leaders pledge to make participation in our community a harassment-free experience for everyone. By participating in this project, you agree to abide by its [Code of Conduct](https://github.com/UI5/renovate-config?tab=coc-ov-file#readme) at all times.
 
 ## Licensing
 
-Copyright (20xx-)20xx SAP SE or an SAP affiliate company and <your-project> contributors. Please see our [LICENSE](LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/SAP/<your-project>).
+Copyright 2024 SAP SE or an SAP-affiliate company and contributors. Please see our [LICENSE](./LICENSE) for copyright and license information. Detailed information including third-party components and their licensing/copyright information is available [via the REUSE tool](https://api.reuse.software/info/github.com/UI5/renovate-config).
