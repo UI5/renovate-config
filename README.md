@@ -38,7 +38,7 @@ The UI5 Renovate Preset takes into account whether your project uses [OpenUI5](h
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"UI5/renovate-config"
+		"github>ui5/renovate-config"
 	],
 	"separateMinorPatch": true
 }
@@ -52,7 +52,7 @@ If your project should only consume Long-Term Support (LTS) releases, use the fo
 {
 	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
 	"extends": [
-		"UI5/renovate-config:lts"
+		"github>ui5/renovate-config:lts"
 	],
 	"separateMinorPatch": true
 }
