@@ -1,6 +1,6 @@
 ### Support
 
-If you need help setting something up, or if you have questions regarding UI5 Renovate Preset, please refrain from opening an issue on GitHub.
+If you need help setting something up, or if you have questions regarding UI5 Renovate Preset Config, please refrain from opening an issue on GitHub.
 
 Instead, please use one of the following platforms to seek help:
 

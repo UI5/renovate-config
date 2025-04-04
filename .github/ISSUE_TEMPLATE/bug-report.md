@@ -1,6 +1,6 @@
 ---
 name: Bug Report
-about: Report an issue with a package part of UI5 Renovate Preset
+about: Report an issue with a package part of UI5 Renovate Preset Config
 title: ''
 labels: bug, needs triage
 assignees: ''
@@ -35,7 +35,7 @@ Thank you 🧡
 
 ## Context
 
-- UI5 Renovate Preset version: **`unknown`**
+- UI5 Renovate Preset Config version: **`unknown`**
 - Node.js version: **`unknown`**
 - npm version: `unknown`
 - OS/Platform: `unknown`
