@@ -1,6 +1,6 @@
 {
     "$schema": "https://docs.renovatebot.com/renovate-schema.json",
-    "extends": ["github>UI5/renovate-config:datasources"],
+    "extends": ["github>ui5/renovate-config:datasources"],
     "customManagers": [
         {
             "customType": "regex",
