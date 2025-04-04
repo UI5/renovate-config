@@ -47,11 +47,14 @@ If you find any bug that may be a security problem, please follow the instructio
 
 GitHub offers labels to categorize issues. The labels can only be set and modified by committers.
 
-#### General issue categories:
+#### General issue types:
 
-- **`bug`**: This issue is caused by a bug in the code.
+- **`Bug`**: This issue is a bug in the code.
+- **`Feature`**: This is not a bug report, but a feature request.
+
+#### Specific issue categories for UI5 Renovate Preset Config:
+
 - **`documentation`**: This issue is documentation-related.
-- **`enhancement`**: This is not a bug report but an enhancement request.
 - **`needs triage`**: This issue needs to be investigated and confirmed as a valid issue that is not a duplicate
 
 ##### Status of an open issue:
