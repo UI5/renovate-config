@@ -1,6 +1,6 @@
 ![UI5 logo](./docs/images/UI5_logo_wide.png)
 
-# UI5 Renovate Preset
+# UI5 Renovate Preset Config
 
 > A Renovate preset to keep your UI5 application up-to-date.
 
@@ -8,7 +8,7 @@
 [![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-v2.1%20adopted-ff69b4.svg)](https://github.com/UI5/renovate-config?tab=coc-ov-file#readme)
 [![REUSE status](https://api.reuse.software/badge/github.com/UI5/renovate-config)](https://api.reuse.software/info/github.com/UI5/renovate-config)
 
-- [UI5 Renovate Preset](#ui5-renovate-config)
+- [UI5 Renovate Preset Config](#ui5-renovate-config)
 	- [Features](#features)
 	- [Usage](#usage)
 	- [Sample](#sample)
@@ -26,7 +26,7 @@ Information on the currently used UI5 version is updated in the following files:
 - ui5.yaml files
 - HTML files
 
-The UI5 Renovate Preset takes into account whether your project uses [OpenUI5](https://sdk.openui5.org/) or [SAPUI5](https://ui5.sap.com/).
+The UI5 Renovate Preset Config takes into account whether your project uses [OpenUI5](https://sdk.openui5.org/) or [SAPUI5](https://ui5.sap.com/).
 
 ## Usage
 
@@ -60,7 +60,7 @@ If your project should only consume Long-Term Support (LTS) releases, use the fo
 
 ## Sample
 
-See https://github.com/SAP/openui5-sample-app for a live demo of `UI5 Renovate Preset`.
+See https://github.com/SAP/openui5-sample-app for a live demo of `UI5 Renovate Preset Config`.
 
 ## Further Information
 

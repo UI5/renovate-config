@@ -1,6 +1,6 @@
 ---
 name: Feature Request
-about: Request a new feature to be added to a package part of UI5 Renovate Preset
+about: Request a new feature to be added to a package part of UI5 Renovate Preset Config
 title: ''
 labels: enhancement
 assignees: ''
