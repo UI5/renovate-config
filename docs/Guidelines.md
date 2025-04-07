@@ -2,7 +2,7 @@
 
 ## Linting Guidelines
 
-Please ensure prettifing the `default.json` using [Prettier](https://prettier.io/) by execute `npm run prettier` before you commit your change.  
+Please ensure prettifing the `default.json`, `lts.json` and `datasources.json` using [Prettier](https://prettier.io/) by execute `npm run prettier` before you commit your change.  
 
 ## Git Guidelines
 
