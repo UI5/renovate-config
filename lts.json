@@ -29,11 +29,14 @@
                 "ui5-deploy\\.ya?ml",
                 "ui5-dist\\.ya?ml",
                 "ui5-local\\.ya?ml",
-                ".*\\.html"
+                ".*\\.html",
+                "manifest.json",
+                "CommonDataModel.json"
             ],
             "matchStrings": [
                 "https:\\/\\/ui5\\.sap\\.com\\/(?<currentValue>[\\.0-9]+)",
-                "[\\w\\s\\:\\'\\\"-./@]+SAPUI5[\\w\\s\\:\\'\\\"-./@]+version: \"?(?<currentValue>[\\.0-9]+)\"?"
+                "[\\w\\s\\:\\'\\\"-./@]+SAPUI5[\\w\\s\\:\\'\\\"-./@]+version: \"?(?<currentValue>[\\.0-9]+)\"?",
+                "\\\"(sap\\.platform\\.cf|sap\\.cloud\\.portal)\\\":[\\w\\s\\:\\'\\\"{?,@\\[\\]_\\.]*\\\"ui5VersionNumber\\\":[\\s]*\\\"(?<currentValue>[\\.0-9]+)"
             ],
             "depNameTemplate": "sapui5_lts",
             "datasourceTemplate": "custom.sapui5_lts"
