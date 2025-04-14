@@ -25,6 +25,7 @@ Automatically creates pull requests to your UI5 project whenever a new UI5 versi
 Information on the currently used UI5 version is updated in the following files:
 - ui5.yaml files
 - HTML files
+- `manifest.json` and `CommonDataModel.json` files
 
 The UI5 Renovate Preset Config takes into account whether your project uses [OpenUI5](https://sdk.openui5.org/) or [SAPUI5](https://ui5.sap.com/).
 
