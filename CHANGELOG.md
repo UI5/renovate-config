@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.0](https://github.com/UI5/renovate-config/compare/v1.0.0...v1.1.0) (2025-04-16)
+
+
+### Features
+
+* **sapui5:** Upgrade UI5 version maintained in manifest.json or CommonDataModel.json ([#20](https://github.com/UI5/renovate-config/issues/20)) ([6c877cf](https://github.com/UI5/renovate-config/commit/6c877cf54e3b9744198b09df447c42ed895ff3b3)), closes [#15](https://github.com/UI5/renovate-config/issues/15)
+
 ## [1.0.0](https://github.com/UI5/renovate-config/compare/v0.0.1...v1.0.0) (2025-04-08)
 
 ### General
