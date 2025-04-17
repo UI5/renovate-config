@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.1.1](https://github.com/UI5/renovate-config/compare/v1.1.0...v1.1.1) (2025-04-17)
+
+
+### Bug Fixes
+
+* **openui5_lts:** Result when determining LTS releases is aligned with Renovate schema ([#22](https://github.com/UI5/renovate-config/issues/22)) ([b6dde8d](https://github.com/UI5/renovate-config/commit/b6dde8d30b4c2764680c4c867dbeb2ed332efeca))
+
 ## [1.1.0](https://github.com/UI5/renovate-config/compare/v1.0.0...v1.1.0) (2025-04-16)
 
 
