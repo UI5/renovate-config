@@ -4,13 +4,13 @@
         "openui5": {
             "defaultRegistryUrlTemplate": "https://sdk.openui5.org/version.json",
             "transformTemplates": [
-                "{ \"releases\": $distinct($each($, function($value){ return { \"version\": $value.version, \"changelogUrl\": $value.('https://sdk.openui5.org/' & version & '/#releasenotes.html'), \"sourceUrl\": $value.('https://github.com/SAP/openui5/tree/' & version & '/') }})), \"homepage\": \"https://sdk.openui5.org/\", \"changelogUrl\": \"https://sdk.openui5.org/#releasenotes.html\", \"sourceUrl\": \"https://github.com/SAP/openui5\"}"
+                "{ \"releases\": $distinct($each($, function($value){ return { \"version\": $value.version, \"changelogUrl\": $value.('https://sdk.openui5.org/' & version & '/#releasenotes.html'), \"sourceUrl\": $value.('https://github.com/SAP/openui5/tree/' & version & '/') }})), \"homepage\": \"https://sdk.openui5.org/\", \"changelogUrl\": \"https://sdk.openui5.org/#releasenotes.html\", \"sourceUrl\": \"https://github.com/SAP/openui5\" }"
             ]
         },
         "openui5_lts": {
             "defaultRegistryUrlTemplate": "https://sdk.openui5.org/version.json",
             "transformTemplates": [
-                "{ \"releases\": $distinct($filter($each($, function($value){ return { \"version\": $value.version, \"isStable\": $value.lts, \"changelogUrl\": $value.('https://sdk.openui5.org/' & version & '/#releasenotes.html', \"sourceUrl\": $value.('https://github.com/SAP/openui5/tree/' & version & '/'))}}), function($f){$f.isStable})), \"homepage\": \"https://sdk.openui5.org/\", \"changelogUrl\": \"https://sdk.openui5.org/#releasenotes.html\", \"sourceUrl\": \"https://github.com/SAP/openui5\" }"
+                "{ \"releases\": $distinct($filter($each($, function($value){ return { \"version\": $value.version, \"isStable\": $value.lts, \"changelogUrl\": $value.('https://sdk.openui5.org/' & version & '/#releasenotes.html'), \"sourceUrl\": $value.('https://github.com/SAP/openui5/tree/' & version & '/')}}), function($f){$f.isStable})), \"homepage\": \"https://sdk.openui5.org/\", \"changelogUrl\": \"https://sdk.openui5.org/#releasenotes.html\", \"sourceUrl\": \"https://github.com/SAP/openui5\" }"
             ]
         },
         "sapui5": {
