@@ -63,6 +63,9 @@ If your project should only consume Long-Term Support (LTS) releases, use the fo
 
 See https://github.com/SAP/openui5-sample-app for a live demo of `UI5 Renovate Preset Config`.
 
+## In Action
+The project was presented at UI5con 2025 during the "UI5 Tools - Update 2025" session. Watch the recording titled [UI5 Renovate Preset Config at UI5con 2025](https://www.youtube.com/live/0D0_M4RDiZY?si=ARwxP1RTSOmR7Ts4&t=4527) for further insights.
+
 ## Further Information
 
 - [Renovate Docs](https://docs.renovatebot.com/)
