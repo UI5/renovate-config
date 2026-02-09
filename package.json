@@ -25,7 +25,7 @@
   },
   "scripts": {
     "check-licenses": "licensee --errors-only",
-    "knip": "knip --config knip.config.js",
+    "knip": "knip",
     "hooks:pre-push": "npm run lint:commit",
     "lint:commit": "commitlint -e",
     "prepare": "node ./.husky/skip.js || husky",
