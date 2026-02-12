@@ -25,19 +25,19 @@
   },
   "scripts": {
     "check-licenses": "licensee --errors-only",
-    "depcheck": "depcheck --ignores @commitlint/config-conventional",
+    "knip": "knip",
     "hooks:pre-push": "npm run lint:commit",
     "lint:commit": "commitlint -e",
     "prepare": "node ./.husky/skip.js || husky",
     "prettier": "prettier default.json lts.json datasources.json --write",
     "prettier:check": "prettier default.json lts.json datasources.json --check",
-    "test": "npm run prettier:check && npm run depcheck && npm run check-licenses"
+    "test": "npm run prettier:check && npm run knip && npm run check-licenses"
   },
   "devDependencies": {
     "@commitlint/cli": "^20.4.1",
     "@commitlint/config-conventional": "^20.4.1",
-    "depcheck": "^1.4.7",
     "husky": "^9.1.7",
+    "knip": "^5.83.1",
     "licensee": "^11.1.1",
     "prettier": "3.8.1"
   }
