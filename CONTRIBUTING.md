@@ -87,9 +87,6 @@ For bigger features, an RFC (Request for Comment) might be necessary. You should
 
 Analyzing issue reports can be a lot of effort. Any help is welcome! 👍
 
-Open the [Bug Triage Project Board](https://github.com/orgs/SAP/projects/XX) and look for open issues which require triage, additional work, or a bugfix.  
-To do so, check the **`Needs Triage`** column for issues, or look for issues with the labels **`good first issue`**, **`help wanted`**, or **`information required`**.
-
 You may be able to add additional or missing information, such as a step-by-step guide on how to reproduce an issue or an analysis of the root cause. In case of the latter, you might even be able to [contribute](#-contributing-code) a bugfix. 🙌
 
 ## 💻 Contributing Code
@@ -114,7 +111,6 @@ This DCO replaces the previously used CLA ("Contributor License Agreement") as w
 ### How to Contribute
 
 1. Make sure the change is welcome (see [General Remarks](#general-remarks)).
-    - Also check on the [UI5 Renovate Preset Config Task Board](https://github.com/orgs/SAP/projects/XXX) whether related tasks are already being worked on, blocked, or in discussion.
 1. Create a branch by forking the relevant module repository and apply your change.
 1. Commit and push your change to that branch.
     - 👉 **Please follow our [Development Conventions and Guidelines](docs/Guidelines.md).**

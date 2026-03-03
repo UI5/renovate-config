@@ -8,7 +8,7 @@ body:
         Please have a look at our [contributing guidelines](https://github.com/UI5/renovate-config/blob/main/CONTRIBUTING.md#-reporting-issues) on reporting issues.
 
         > [!TIP]
-        > You can easily create an MRE using a fork of our [OpenUI5 sample app](https://github.com/SAP/openui5-sample-app).
+        > You can easily create an MRE using a fork of our [OpenUI5 sample app](https://github.com/UI5/sample-app).
         > 
         > Alternatively, share a version of your existing project that has been stripped down to a minimum sufficient to reproduce the issue.  
         > Please do not share real business data or other sensitive information.
