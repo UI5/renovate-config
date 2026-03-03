@@ -4,14 +4,14 @@
     "customManagers": [
         {
             "customType": "regex",
-            "fileMatch": [
-                "ui5\\.ya?ml",
-                ".*-ui5\\.ya?ml",
-                ".*\\.ui5\\.ya?ml",
-                "ui5-deploy\\.ya?ml",
-                "ui5-dist\\.ya?ml",
-                "ui5-local\\.ya?ml",
-                ".*\\.html"
+            "managerFilePatterns": [
+                "/ui5\\.ya?ml/",
+                "/.*-ui5\\.ya?ml/",
+                "/.*\\.ui5\\.ya?ml/",
+                "/ui5-deploy\\.ya?ml/",
+                "/ui5-dist\\.ya?ml/",
+                "/ui5-local\\.ya?ml/",
+                "/.*\\.html/"
             ],
             "matchStrings": [
                 "https:\\/\\/sdk\\.openui5\\.org\\/(?<currentValue>[\\.0-9]+)",
@@ -22,16 +22,16 @@
         },
         {
             "customType": "regex",
-            "fileMatch": [
-                "ui5\\.ya?ml",
-                ".*-ui5\\.ya?ml",
-                ".*\\.ui5\\.ya?ml",
-                "ui5-deploy\\.ya?ml",
-                "ui5-dist\\.ya?ml",
-                "ui5-local\\.ya?ml",
-                ".*\\.html",
-                "manifest.json",
-                "CommonDataModel.json"
+            "managerFilePatterns": [
+                "/ui5\\.ya?ml/",
+                "/.*-ui5\\.ya?ml/",
+                "/.*\\.ui5\\.ya?ml/",
+                "/ui5-deploy\\.ya?ml/",
+                "/ui5-dist\\.ya?ml/",
+                "/ui5-local\\.ya?ml/",
+                "/.*\\.html/",
+                "/manifest.json/",
+                "/CommonDataModel.json/"
             ],
             "matchStrings": [
                 "https:\\/\\/ui5\\.sap\\.com\\/(?<currentValue>[\\.0-9]+)",
