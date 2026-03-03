@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.0](https://github.com/UI5/renovate-config/compare/v1.1.1...v1.2.0) (2026-03-03)
+
+
+### Features
+
+* Migrate 'fileMatch' to 'managerFilePatterns' property ([e22baac](https://github.com/UI5/renovate-config/commit/e22baacebee03f356e7764af92a0d69c3a6326fd))
+
 ## [1.1.1](https://github.com/UI5/renovate-config/compare/v1.1.0...v1.1.1) (2025-04-17)
 
 
