@@ -1,6 +1,6 @@
 {
   "name": "@ui5/renovate-config",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "private": "true",
   "description": "A Renovate preset to keep your UI5 application up-to-date",
   "author": {

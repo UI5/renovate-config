@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1](https://github.com/UI5/renovate-config/compare/v1.2.0...v1.2.1) (2026-03-04)
+
+
+### Bug Fixes
+
+* **datasources.json:** Use UI5 GitHub organization for links to source code ([8bdaf6d](https://github.com/UI5/renovate-config/commit/8bdaf6de8126c62a1678f8ba4a62555ce47c699b))
+
 ## [1.2.0](https://github.com/UI5/renovate-config/compare/v1.1.1...v1.2.0) (2026-03-03)
 
 
