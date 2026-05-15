@@ -26,8 +26,7 @@
   "scripts": {
     "check-licenses": "licensee --errors-only",
     "knip": "knip",
-    "hooks:pre-push": "npm run lint:commit",
-    "lint:commit": "commitlint -e",
+    "lint:commit": "commitlint",
     "prepare": "node ./.husky/skip.js || husky",
     "prettier": "prettier default.json lts.json datasources.json --write",
     "prettier:check": "prettier default.json lts.json datasources.json --check",
