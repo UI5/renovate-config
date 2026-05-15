@@ -3,12 +3,17 @@
     "spdx": [
       "CC-BY-3.0",
       "CC-BY-4.0",
-      "BSD"
+      "BSD",
+      "MPL-2.0"
     ],
     "blueOak": "bronze"
   },
   "packages": {
-    "callsite": "1.0.0"
+    "@renovatebot/detect-tools": "3.0.0",
+    "backslash": "0.2.2",
+    "openpgp": "6.3.0",
+    "renovate": "43.150.0",
+    "semver-utils": "1.1.4"
   },
   "corrections": true
 }
