@@ -18,13 +18,13 @@ jobs:
     - uses: actions/checkout@v6
       with:
         fetch-depth: 0
-    - name: Use Node.js 22
+    - name: Use Node.js 24
       uses: actions/setup-node@v6
       with:
-        node-version: 22
+        node-version: 24
 
     - name: Install dependencies
-      run: npm ci --engine-strict # --engine-strict is used to fail-fast if deps require node versions unsupported by the repo
+      run: npm ci
 
     - name: Perform Prettier check
       run: npm run prettier:check
