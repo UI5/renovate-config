@@ -13,13 +13,13 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
     - uses: actions/checkout@v6
-    - name: Use Node.js 22
+    - name: Use Node.js 24
       uses: actions/setup-node@v6
       with:
-        node-version: 22
+        node-version: 24
 
     - name: Install dependencies
-      run: npm ci --engine-strict # --engine-strict is used to fail-fast if deps require node versions unsupported by the repo
+      run: npm ci
 
     - name: Perform Prettier check
       run: npm run prettier:check
@@ -31,4 +31,4 @@ jobs:
       run: npm run knip
 
     - name: Perform Renovate config validation
-      run: npx --yes --package renovate -- renovate-config-validator --no-global --strict datasources.json default.json lts.json
+      run: npm run validate
