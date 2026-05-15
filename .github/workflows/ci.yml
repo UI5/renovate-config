@@ -31,4 +31,4 @@ jobs:
       run: npm run knip
 
     - name: Perform Renovate config validation
-      run: npx --yes --package renovate -- renovate-config-validator --no-global --strict datasources.json default.json lts.json
+      run: npm run validate

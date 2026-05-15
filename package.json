@@ -28,6 +28,7 @@
     "knip": "knip",
     "hooks:pre-push": "npm run lint:commit",
     "lint:commit": "commitlint -e",
+    "validate": "renovate-config-validator --no-global --strict datasources.json default.json lts.json",
     "prepare": "node ./.husky/skip.js || husky",
     "prettier": "prettier default.json lts.json datasources.json --write",
     "prettier:check": "prettier default.json lts.json datasources.json --check",
@@ -39,6 +40,7 @@
     "husky": "^9.1.7",
     "knip": "^6.13.1",
     "licensee": "^12.0.1",
-    "prettier": "3.8.3"
+    "prettier": "3.8.3",
+    "renovate": "^43.150.0"
   }
 }
