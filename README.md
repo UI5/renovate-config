@@ -11,6 +11,7 @@
 - [UI5 Renovate Preset Config](#ui5-renovate-config)
 	- [Features](#features)
 	- [Usage](#usage)
+	- [Usage in TypeScript Projects](#usage-in-typescript-projects)
 	- [Sample](#sample)
 	- [Further Information](#further-information)
 	- [Support, Feedback, Contributing](#support-feedback-contributing)
@@ -58,6 +59,63 @@ If your project should only consume Long-Term Support (LTS) releases, use the fo
 	"separateMinorPatch": true
 }
 ```
+
+## Usage in TypeScript Projects
+
+UI5 TypeScript projects depend on type packages (`@openui5/types` or `@sapui5/types`) whose versions must match the UI5 framework version. By default, Renovate manages these npm packages independently from the OpenUI5 / SAPUI5 version references in `ui5.yaml` and HTML files. To keep them in sync, add `packageRules` to your `renovate.json` that:
+
+1. **Override the datasource** of the types package to use the same custom OpenUI5 / SAPUI5 datasource, so Renovate proposes the same version for both.
+2. **Group** the types package together with the OpenUI5 / SAPUI5 framework update into a single pull request.
+
+### OpenUI5
+
+```json
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"github>ui5/renovate-config"
+	],
+	"separateMinorPatch": true,
+	"packageRules": [
+		{
+			"matchDepNames": ["@openui5/types"],
+			"overrideDatasource": "custom.openui5",
+		},
+		{
+			"matchDepNames": ["openui5", "@openui5/types"],
+			"groupName": "openui5"
+		}
+	]
+}
+```
+
+### SAPUI5
+
+```json
+{
+	"$schema": "https://docs.renovatebot.com/renovate-schema.json",
+	"extends": [
+		"github>ui5/renovate-config"
+	],
+	"separateMinorPatch": true,
+	"packageRules": [
+		{
+			"matchDepNames": ["@sapui5/types"],
+			"overrideDatasource": "custom.sapui5",
+		},
+		{
+			"matchDepNames": ["sapui5", "@sapui5/types"],
+			"groupName": "sapui5"
+		}
+	]
+}
+```
+
+For LTS-only projects, replace the preset and datasource accordingly (e.g., `github>ui5/renovate-config:lts` and `custom.openui5_lts` / `custom.sapui5_lts`).
+
+**How it works:** The `overrideDatasource` tells Renovate to resolve the types package version from the OpenUI5 / SAPUI5 version feed instead of the npm registry. The `groupName` ensures both the framework version and the types package are proposed in the same pull request, so your project stays consistent.
+
+See the [UI5 Tutorials renovate.json](https://github.com/UI5/tutorials/blob/main/renovate.json) for a full working example.
 
 ## Sample
 
