@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.2](https://github.com/UI5/renovate-config/compare/v1.2.1...v1.2.2) (2026-10-18)
+
+
+### Dependencies
+
+* **lockfile:** In-range update of npm dependencies ([e943a47](https://github.com/UI5/renovate-config/commit/e943a474255f7d6a6e46fb4ca0ed3843f84bb847))
+
 ## [1.2.1](https://github.com/UI5/renovate-config/compare/v1.2.0...v1.2.1) (2026-03-04)
 
 
