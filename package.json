@@ -34,7 +34,7 @@
   },
   "devDependencies": {
     "@commitlint/cli": "^21.2.3",
-    "@commitlint/config-conventional": "^21.2.3",
+    "@commitlint/config-conventional": "^21.2.4",
     "husky": "^9.1.7",
     "knip": "^6.41.0",
     "licensee": "^12.0.2",
