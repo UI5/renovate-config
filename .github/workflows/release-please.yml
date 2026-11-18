@@ -11,7 +11,7 @@ permissions:
 
 jobs:
   pull-request:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     environment: release
     steps:
     - uses: googleapis/release-please-action@45996ed1f6d02564a971a2fa1b5860e934307cf7 # v5.0.0
@@ -21,7 +21,7 @@ jobs:
   publish-package:
     needs: pull-request
     if: ${{needs.pull-request.outputs.releases_created && toJson(fromJson(needs.pull-request.outputs.paths_released)) != '[]'}}
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-26.04
     steps:
     - name: Checkout
       uses: actions/checkout@v7
